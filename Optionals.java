@@ -14,7 +14,11 @@ public class Optionals {
 //       Object canBeNull= Optional.ofNullable("null").orElseGet(() -> "default value");
 //       Object canBeNull= Optional.empty().orElseGet(() -> "default value");
 
-//       System.out.println(canBeNull);  
+       Optional.of("some content here")
+               .ifPresent(System.out::println);
+
+
+//       System.out.println(canBeNull);
        System.out.println(cannotBeNull);
    }
 
